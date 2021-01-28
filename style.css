@@ -1,0 +1,72 @@
+body{
+    background: #002583;
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(0.03deg, #F6BF4A -2.09%, #EC622D 36.19%, #DC395E 68.08%, #C04D95 99.98%);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+.comingsoon{
+    font-family: 'Integral CF';
+font-style: normal;
+font-weight: 800;
+font-size: 3em;
+line-height: 87%;
+color: #FFFFFF;
+/* or 52px */
+margin-top: 20px;
+
+text-align: center;
+position: absolute;
+
+top: 35.44%;
+bottom: 53%;
+
+
+}
+
+.ignitelogo{
+    /* width: 526px;
+    height: 500px; */
+    position: absolute;
+/* left: 45.14%; */
+/* right: 45.21%; */
+top: 7.33%;
+bottom: 72.31%;
+}
+
+.lookman{
+    width: 526px;
+    max-width: 80vw;
+    /* height: 500px; */
+    bottom: 0;
+    position: absolute;
+}
+
+@media screen and (max-width: 680px) {
+    .comingsoon{
+        font-size: 2.6em;
+        word-spacing: 100vw;
+    }
+}
+@font-face {
+    font-family: 'Integral CF';
+    src: url('fonts/IntegralCF-ExtraBold.woff2') format('woff2'),
+        url('fonts/IntegralCF-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
