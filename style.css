@@ -62,7 +62,7 @@ bottom: 72.31%;
     max-width: 80vw;
     /* height: 500px; */
     bottom: 0;
-    position: absolute;
+    position: fixed;
 }
 
 @media screen and (max-width: 680px) {
