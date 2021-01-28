@@ -1,8 +1,17 @@
 body{
-    background: #002583;
+    /* background: #002583; */
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(0.03deg, #F6BF4A -2.09%, #EC622D 36.19%, #DC395E 68.08%, #C04D95 99.98%);
+    /* background: linear-gradient(0.03deg, #F6BF4A -2.09%, #EC622D 36.19%, #DC395E 68.08%, #C04D95 99.98%);
+    background: radial-gradient(51.67% 51.67% at 50% 80.33%, #85B6FF 0%, #227AFF 100%); */
+    
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    /* animation: backg 5s infinite; */
+    -webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+
 }
 
 .flex-center{
@@ -33,6 +42,7 @@ position: absolute;
 
 top: 35.44%;
 bottom: 53%;
+/* animation: comingSoon 5s infinite cubic-bezier(0.075, 0.82, 0.165, 1); */
 
 
 }
@@ -59,6 +69,7 @@ bottom: 72.31%;
     .comingsoon{
         font-size: 2.6em;
         word-spacing: 100vw;
+        top: 38.44%;
     }
 }
 @font-face {
@@ -70,3 +81,68 @@ bottom: 72.31%;
     font-display: swap;
 }
 
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes backg{
+    0%{
+        background: linear-gradient(0.03deg, #F6BF4A -2.09%, #EC622D 36.19%, #DC395E 68.08%, #C04D95 99.98%);
+    }
+    50%{
+        /* background: radial-gradient(51.67% 51.67% at 50% 80.33%, #85B6FF 0%, #227AFF 100%); */
+        background: linear-gradient(0.03deg, #85B6FF -2.09%, #227AFF 99.98%);
+
+
+    }
+    100%{
+        background: linear-gradient(0.03deg, #F6BF4A -2.09%, #EC622D 36.19%, #DC395E 68.08%, #C04D95 99.98%);
+    }
+}
+
+@keyframes comingSoon{
+    0%{
+        /* transform: rotate(0eg); */
+        transform: translate(0,0px);
+    }
+    50%{
+        /* transform: rotate(20deg); */
+        transform: translate(0,-10px);
+    }
+    100%{
+        /* transform: rotate(20deg); */
+        transform: translate(0,0px);
+    }
+    
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
