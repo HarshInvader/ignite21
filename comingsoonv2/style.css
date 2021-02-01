@@ -42,6 +42,7 @@ position: absolute;
 
 top: 35.44%;
 bottom: 53%;
+mix-blend-mode: soft-light;
 /* animation: comingSoon 5s infinite cubic-bezier(0.075, 0.82, 0.165, 1); */
 
 
