@@ -66,6 +66,7 @@ body {
 .techTalks {
   background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
   height: 600px;
+  overflow: hidden;
 }
 .eventsFlow {
   font-family: Integral CF, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -225,6 +226,7 @@ body {
   overflow: hidden;
   margin-top: 50px;
 }
+
 .hackathonLogo {
   width: 80px;
 }
