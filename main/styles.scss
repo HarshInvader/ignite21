@@ -14,6 +14,9 @@ body {
   // );
   // min-height: 100vh;
 }
+.mobileNavbar {
+  display: none;
+}
 .flex {
   display: flex;
 }
@@ -124,7 +127,7 @@ body {
     sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 87%;
   /* or 70px */
 
@@ -256,6 +259,27 @@ body {
   .mike {
     width: 140px;
     top: -10px;
+  }
+  .mobileNavbar {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 16px;
+    opacity: 1;
+    mix-blend-mode: overlay;
+    backdrop-filter: saturate(120%) blur(90px);
+    z-index: 9;
+    // padding: 0 32px;
+    border-radius: 32px;
+  }
+  .movileNavbar {
+    background-color: hsla(0, 0%, 100%, 0.4);
+  }
+  .navbar {
+    display: none;
   }
 }
 
