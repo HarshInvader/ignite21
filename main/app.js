@@ -46,12 +46,12 @@ function animatePages() {
       RevealTagline1,
       0.5,
       {
-        x: "-50%",
+        y: "-50%",
         scale: 0,
         opacity: 0,
       },
       {
-        x: "0%",
+        y: "0%",
         scale: 1,
         autoAlpha: 1,
       }
@@ -60,12 +60,12 @@ function animatePages() {
       RevealTagline2,
       0.6,
       {
-        x: "-50%",
+        y: "-50%",
         scale: 0,
         opacity: 0,
       },
       {
-        x: "0%",
+        y: "0%",
         scale: 1,
         autoAlpha: 1,
       }
@@ -75,12 +75,12 @@ function animatePages() {
       0.2,
 
       {
-        x: "-50%",
+        y: "-50%",
         opacity: 0,
         scale: 0,
       },
       {
-        x: "0%",
+        y: "0%",
         autoAlpha: 1,
         scale: 1,
       },
