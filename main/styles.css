@@ -245,27 +245,44 @@
 @media screen and (max-width: 980px) {
   .tagline {
     text-align: center !important;
-    font-size: 2.5em;
+    font-size: 2rem;
   }
   .subhead {
     text-align: center;
     margin: 10px 0 0 0;
+    font-size: 1em;
   }
   .page1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     min-height: 100vh;
+    margin-bottom: 0;
+    padding: 80px 10px 0 10px;
+    height: 100%;
   }
   .lookman {
+    position: static;
     width: 200px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    justify-self: flex-end;
   }
   .button {
     width: 100%;
+    font-size: 1.5rem;
+  }
+  .mike {
+    width: 140px;
+    top: -10px;
   }
 }
 
