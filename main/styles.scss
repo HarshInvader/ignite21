@@ -292,7 +292,9 @@ body {
   .navbar {
     display: none;
   }
-  .ideathon {
+  .ideathon,
+  .gaming,
+  .techTalks {
     flex-direction: column;
   }
   .hackathonLogo {
