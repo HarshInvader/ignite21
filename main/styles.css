@@ -312,6 +312,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  body {
+    cursor: default !important;
+  }
+  .cursor {
+    display: none !important;
+  }
 }
 
 @-webkit-keyframes Gradient {

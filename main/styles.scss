@@ -220,6 +220,9 @@ body {
   height: 600px;
   margin-top: 50px;
 }
+.hackathonLogo{
+  width: 80px;
+}
 @media screen and (max-width: 980px) {
   .tagline {
     text-align: center !important;
@@ -284,6 +287,15 @@ body {
   }
   .ideathon {
     flex-direction: column;
+    
+  .hackathonLogo{
+    width: 40px;
+  }
+  body {
+    cursor: default !important;
+  }
+  .cursor {
+    display: none !important;
   }
 }
 
