@@ -309,6 +309,12 @@
   .navbar {
     display: none;
   }
+  .ideathon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @-webkit-keyframes Gradient {
