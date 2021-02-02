@@ -43,8 +43,26 @@ function animatePages() {
     //   "-=0.6"
     // );
     slide.fromTo(
+      ".logo",
+      0.6,
+      {
+        y: "50%",
+        // x: "100%",
+        scale: 1,
+        opacity: 0,
+      },
+      {
+        y: "0%",
+        // x: "0%",
+        scale: 1,
+        autoAlpha: 1,
+        ease: "power3.inOut",
+      }
+      //   "power3.inOut"
+    );
+    slide.fromTo(
       RevealTagline1,
-      0.5,
+      0.3,
       {
         y: "50%",
         // scale: 0,
@@ -54,11 +72,12 @@ function animatePages() {
         y: "0%",
         // scale: 1,
         autoAlpha: 1,
+        ease: "power3.inOut",
       }
     );
     slide.fromTo(
       RevealTagline2,
-      0.6,
+      0.3,
       {
         y: "50%",
         // scale: 0,
@@ -68,11 +87,12 @@ function animatePages() {
         y: "0%",
         // scale: 1,
         autoAlpha: 1,
+        ease: "power3.inOut",
       }
     );
     slide.fromTo(
       ".requestButton",
-      0.2,
+      0.3,
 
       {
         y: "50%",
@@ -83,8 +103,24 @@ function animatePages() {
         y: "0%",
         autoAlpha: 1,
         // scale: 1,
+      }
+      //   "-=0.2"
+    );
+    slide.fromTo(
+      ".lookman",
+      0.3,
+
+      {
+        y: "50%",
+        opacity: 0,
+        // scale: 0,
       },
-      "-=0.2"
+      {
+        y: "0%",
+        autoAlpha: 1,
+        // scale: 1,
+      }
+      //   "-=0.2"
     );
 
     // slide.fromTo(
