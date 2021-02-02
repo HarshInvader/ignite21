@@ -186,6 +186,7 @@ function animatePages() {
   pairers.forEach((pairHook, index, pairs) => {
     const Ptl = new TimelineMax();
     let child = pairHook.querySelectorAll(".parallax");
+    const ideathon = pairHook.querySelector(".ideathon");
     const illustrationReveal = pairHook.querySelector(".illustration");
     Ptl.fromTo(
       illustrationReveal,
@@ -199,28 +200,51 @@ function animatePages() {
         scale: 1,
         x: 0,
         opacity: 1,
-      },
-      "power3.inOut"
+      }
+      // "power3.inOut"
     );
 
     Ptl.fromTo(
       child,
-      1.5,
-      {
-        y: 60,
-        ease: "power1.inOut",
-      },
+      1,
       {
         // scale: 0,
-        y: -120,
-        // opacity: 0,
+        x: -200,
+        opacity: 0,
+      },
+      {
+        scale: 1,
+        x: 0,
+        opacity: 1,
       }
-      //   {
-      //     scale: 1,
-      //     x: 0,
-      //     opacity: 1,
-      //   }
+      // "power3.inOut"
     );
+    Ptl.fromTo(
+      ideathon,
+      1,
+      {
+        // scale: 0,
+        background: "#554cc2",
+      },
+      {
+        background: "linear-gradient(139.41deg, #EBBE21 5.11%, #D67300 91.8%)",
+      },
+      "-=1.8"
+      // "power3.inOut"
+    );
+    // Ptl.fromTo(
+    // child,
+    // 1.5,
+    // {
+    //   y: 60,
+    //   ease: "power1.inOut",
+    // },
+    // {
+    //   // scale: 0,
+    //   y: -120,
+    //   // opacity: 0,
+    // }
+    // );
     var scene = new ScrollMagic.Scene({
       triggerElement: pairHook,
       triggerHook: 0.8,
