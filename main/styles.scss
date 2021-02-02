@@ -215,12 +215,12 @@ body {
 }
 
 .ideathon {
-  // background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
+  background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
   // background-color: #000;
   height: 600px;
   margin-top: 50px;
 }
-.hackathonLogo{
+.hackathonLogo {
   width: 80px;
 }
 @media screen and (max-width: 980px) {
@@ -287,8 +287,8 @@ body {
   }
   .ideathon {
     flex-direction: column;
-    
-  .hackathonLogo{
+  }
+  .hackathonLogo {
     width: 40px;
   }
   body {

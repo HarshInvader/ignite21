@@ -219,19 +219,17 @@ function animatePages() {
       }
       // "power3.inOut"
     );
-    Ptl.fromTo(
-      ideathon,
-      1,
-      {
-        // scale: 0,
-        background: "#554cc2",
-      },
-      {
-        background: "linear-gradient(139.41deg, #EBBE21 5.11%, #D67300 91.8%)",
-      },
-      "-=1.8"
-      // "power3.inOut"
-    );
+    // Ptl.fromTo(
+    //   ideathon,
+    //   1,
+    //   {
+    //     background: "#554cc2",
+    //   },
+    //   {
+    //     background: "linear-gradient(139.41deg, #EBBE21 5.11%, #D67300 91.8%)",
+    //   },
+    //   "-=1.8"
+    // );
     // Ptl.fromTo(
     // child,
     // 1.5,
