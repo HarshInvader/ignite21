@@ -42,6 +42,13 @@ body {
   );
   margin-bottom: 0 !important;
   min-height: 100vh;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  /* animation: backg 5s infinite; */
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
 }
 .page2 {
   color: #05d5b8;
@@ -158,7 +165,7 @@ body {
 }
 .navbar .item {
   margin: 10px 20px;
-  mix-blend-mode: overlay;
+  mix-blend-mode: soft-light;
 }
 .button {
   padding: 15px 25px;
@@ -185,8 +192,10 @@ body {
 //   transform: translate(0, -4px);
 // }
 .red {
-  background: #c83200;
-  border: 2px solid #c83200;
+  // background: #c83200;
+  // border: 2px solid #c83200;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 
   opacity: 0.8;
@@ -223,6 +232,17 @@ body {
   }
 }
 
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @font-face {
   font-family: "Integral CF";
   src: url("fonts/IntegralCF-ExtraBold.woff2") format("woff2"),

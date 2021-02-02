@@ -48,6 +48,11 @@ body {
   background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
   margin-bottom: 0 !important;
   min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  /* animation: backg 5s infinite; */
+  -webkit-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
 }
 
 .page2 {
@@ -182,7 +187,7 @@ body {
 
 .navbar .item {
   margin: 10px 20px;
-  mix-blend-mode: overlay;
+  mix-blend-mode: soft-light;
 }
 
 .button {
@@ -222,8 +227,8 @@ body {
 }
 
 .red {
-  background: #c83200;
-  border: 2px solid #c83200;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   opacity: 0.8;
 }
@@ -258,6 +263,30 @@ body {
   }
   .button {
     width: 100%;
+  }
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

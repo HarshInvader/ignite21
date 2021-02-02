@@ -102,6 +102,7 @@ function animatePages() {
       {
         y: "0%",
         autoAlpha: 1,
+        ease: "power3.inOut",
         // scale: 1,
       }
       //   "-=0.2"
@@ -118,6 +119,7 @@ function animatePages() {
       {
         y: "0%",
         autoAlpha: 1,
+        ease: "power3.inOut",
         // scale: 1,
       }
       //   "-=0.2"
