@@ -339,11 +339,11 @@ animatePages();
 
 let proxy = { skew: 0 },
   skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
-  clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
+  clamp = gsap.utils.clamp(-15, 15); // don't let the skew go beyond 20 degrees.
 
 ScrollTrigger.create({
   onUpdate: (self) => {
-    let skew = clamp(self.getVelocity() / -300);
+    let skew = clamp(self.getVelocity() / -800);
     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
     if (Math.abs(skew) > Math.abs(proxy.skew)) {
       proxy.skew = skew;
