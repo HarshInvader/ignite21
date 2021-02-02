@@ -70,23 +70,23 @@ function animatePages() {
         autoAlpha: 1,
       }
     );
-    // slide.fromTo(
-    //   ".requestButton",
-    //   0.2,
+    slide.fromTo(
+      ".requestButton",
+      0.2,
 
-    //   {
-    //     y: "0%",
-    //     opacity: 0,
-    //     scale: 0,
-    //   },
-    //   {
-    //     y: "0%",
-    //     autoAlpha: 1,
-    //     scale: 1,
-    //   },
-    //   "-=0.2",
-    //   "linear.inOut"
-    // );
+      {
+        x: "-50%",
+        opacity: 0,
+        scale: 0,
+      },
+      {
+        x: "0%",
+        autoAlpha: 1,
+        scale: 1,
+      },
+      "-=0.2",
+      "linear.inOut"
+    );
 
     // slide.fromTo(
     //   Reveal,
