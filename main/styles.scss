@@ -46,12 +46,11 @@ body {
   margin-bottom: 0 !important;
   min-height: 100vh;
 
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  /* animation: backg 5s infinite; */
-  -webkit-animation: Gradient 15s ease-in-out infinite;
-  -moz-animation: Gradient 15s ease-in-out infinite;
-  animation: Gradient 15s ease-in-out infinite;
+  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  // background-size: 400% 400%;
+  // -webkit-animation: Gradient 15s ease-in-out infinite;
+  // -moz-animation: Gradient 15s ease-in-out infinite;
+  // animation: Gradient 15s ease-in-out infinite;
 }
 .page2 {
   color: #05d5b8;
@@ -130,7 +129,8 @@ body {
   font-size: 60px;
   line-height: 87%;
   /* or 70px */
-
+  mix-blend-mode: soft-light;
+  filter: saturate(150%);
   letter-spacing: -0.015em;
 
   color: #ffffff;
@@ -178,7 +178,7 @@ body {
 }
 .navbar .item {
   margin: 12px 20px;
-  // mix-blend-mode: 10px;
+  // mix-blend-mode: hard-light;
 }
 .button {
   padding: 15px 28px;

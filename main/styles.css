@@ -48,11 +48,6 @@
   background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
   margin-bottom: 0 !important;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  /* animation: backg 5s infinite; */
-  -webkit-animation: Gradient 15s ease-in-out infinite;
-  animation: Gradient 15s ease-in-out infinite;
 }
 
 .page2 {
@@ -145,6 +140,9 @@
   font-size: 60px;
   line-height: 87%;
   /* or 70px */
+  mix-blend-mode: soft-light;
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
   letter-spacing: -0.015em;
   color: #ffffff;
 }
