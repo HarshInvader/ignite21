@@ -307,8 +307,8 @@ for (let i = 0; i < $hoverables.length; i++) {
 // Move the cursor
 function onMouseMove(e) {
   TweenMax.to($bigBall, 0.4, {
-    x: e.clientX + 14,
-    y: e.clientY + 18,
+    x: e.clientX - 10,
+    y: e.clientY - 14,
   });
   TweenMax.to($smallBall, 0.1, {
     x: e.clientX - 5,
@@ -319,7 +319,7 @@ function onMouseMove(e) {
 // Hover an element
 function onMouseHover() {
   TweenMax.to($bigBall, 0.3, {
-    scale: 4,
+    scale: 2,
     // width: "200px",
     // height: "150px",
     // cx: "40px",
