@@ -46,9 +46,9 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   /* animation: backg 5s infinite; */
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  -webkit-animation: Gradient 15s ease-in-out infinite;
+  -moz-animation: Gradient 15s ease-in-out infinite;
+  animation: Gradient 15s ease-in-out infinite;
 }
 .page2 {
   color: #05d5b8;
@@ -144,7 +144,7 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.6em;
   // line-height: 87%;
   /* or 26px */
   color: #ffffff;
@@ -153,19 +153,20 @@ body {
   top: 0;
   right: 0;
   width: 100vw;
-  mix-blend-mode: overlay;
+  // mix-blend-mode: overlay;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-end;
   background: rgba(151, 1, 1, 0.2);
   mix-blend-mode: normal;
-  backdrop-filter: blur(90px);
+  // backdrop-filter: blur(90px);
   height: 50px;
   z-index: 9;
+  backdrop-filter: saturate(120%) blur(90px);
 }
 .navbar .item {
-  margin: 10px 20px;
-  mix-blend-mode: soft-light;
+  margin: 12px 20px;
+  // mix-blend-mode: 10px;
 }
 .button {
   padding: 15px 25px;
