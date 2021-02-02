@@ -199,14 +199,14 @@ function animatePages() {
       "power3.inOut"
     );
 
-    Ptl.to(child, 1, {
+    Ptl.to(child, 1.5, {
       y: -120,
-      ease: Linear.easeNone,
+      ease: "power1.inOut",
     });
     var scene = new ScrollMagic.Scene({
       triggerElement: pairHook,
-      triggerHook: 0.6,
-      duration: "80%",
+      triggerHook: 0.8,
+      duration: "100%",
     })
       .setTween(Ptl)
 
