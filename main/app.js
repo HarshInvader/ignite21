@@ -186,14 +186,19 @@ function animatePages() {
   pairers.forEach((pairHook, index, pairs) => {
     const Ptl = new TimelineMax();
     let child = pairHook.querySelectorAll(".parallax");
+    let childRight = pairHook.querySelectorAll(".parallaxRight");
     const ideathon = pairHook.querySelector(".ideathon");
     const illustrationReveal = pairHook.querySelector(".illustration");
+    const illustrationRevealRight = pairHook.querySelector(
+      ".illustrationRight"
+    );
+
     Ptl.fromTo(
       illustrationReveal,
       1,
       {
         // scale: 0,
-        x: -200,
+        x: -400,
         opacity: 0,
       },
       {
@@ -209,7 +214,38 @@ function animatePages() {
       1,
       {
         // scale: 0,
+        x: 400,
+        opacity: 0,
+      },
+      {
+        scale: 1,
+        x: 0,
+        opacity: 1,
+      }
+      // "power3.inOut"
+    );
+    Ptl.fromTo(
+      illustrationRevealRight,
+      1,
+      {
+        // scale: 0,
         x: -200,
+        opacity: 0,
+      },
+      {
+        scale: 1,
+        x: 0,
+        opacity: 1,
+      }
+      // "power3.inOut"
+    );
+
+    Ptl.fromTo(
+      childRight,
+      1,
+      {
+        // scale: 0,
+        x: 200,
         opacity: 0,
       },
       {
