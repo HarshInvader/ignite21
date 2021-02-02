@@ -6,10 +6,6 @@
           box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,7 +54,8 @@ body {
 .page2 {
   color: #05d5b8;
   background: #554cc2;
-  padding-top: 20px !important;
+  padding: 120px 0 0px 0 !important;
+  position: relative;
 }
 
 .gaming {
@@ -128,6 +125,14 @@ body {
   z-index: 1;
 }
 
+.mike {
+  position: absolute;
+  width: 250px;
+  left: 0px;
+  top: -100px;
+  z-index: 1;
+}
+
 .tagline {
   margin-top: 20px;
   font-family: "Epilogue", "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -189,10 +194,10 @@ body {
 }
 
 .button {
-  padding: 15px 25px;
+  padding: 15px 28px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 15px;
+  border-radius: 90px;
   font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 30px;
   cursor: pointer;
@@ -318,5 +323,26 @@ body {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  cursor: none;
+}
+
+.cursor {
+  pointer-events: none;
+}
+
+body .cursor__ball {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000 !important;
+}
+
+body .cursor__ball circle {
+  fill: #f7f8fa;
+  position: fixed !important;
 }
 /*# sourceMappingURL=styles.css.map */

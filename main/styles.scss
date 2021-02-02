@@ -12,7 +12,7 @@ body {
   //   #dc395e 64.16%,
   //   #c04d95 92.61%
   // );
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 .flex {
   display: flex;
@@ -53,7 +53,8 @@ body {
 .page2 {
   color: #05d5b8;
   background: #554cc2;
-  padding-top: 20px !important;
+  padding: 120px 0 0px 0 !important;
+  position: relative;
 }
 .gaming {
   background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
@@ -105,6 +106,14 @@ body {
   width: 526px;
   right: 0px;
   bottom: 0px;
+  z-index: 1;
+}
+.mike {
+  position: absolute;
+  // height: 526px;
+  width: 250px;
+  left: 0px;
+  top: -100px;
   z-index: 1;
 }
 .tagline {
@@ -169,10 +178,10 @@ body {
   // mix-blend-mode: 10px;
 }
 .button {
-  padding: 15px 25px;
+  padding: 15px 28px;
   // height: 70px;
   box-sizing: border-box;
-  border-radius: 15px;
+  border-radius: 90px;
   font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 30px;
@@ -278,4 +287,23 @@ body {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  cursor: none;
+}
+.cursor {
+  pointer-events: none;
+  // position: fixed !important;
+}
+body .cursor__ball {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000 !important;
+}
+body .cursor__ball circle {
+  fill: #f7f8fa;
+  position: fixed !important;
 }

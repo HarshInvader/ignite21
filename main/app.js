@@ -125,19 +125,21 @@ function animatePages() {
       //   "-=0.2"
     );
 
-    // slide.fromTo(
-    //   Reveal,
-    //   {
-    //     y: "80%",
-    //     opacity: 0,
-    //   },
-    //   {
-    //     y: "0%",
-    //     opacity: 1,
-    //     visibility: "visible",
-    //   },
-    //   "-=2"
-    // );
+    slide.fromTo(
+      ".mike",
+      {
+        x: "200%",
+        scale: 0,
+        opacity: 0,
+      },
+      {
+        x: "0%",
+        opacity: 1,
+        scale: 1,
+        visibility: "visible",
+      }
+      //   "-=2"
+    );
 
     // slide.fromTo(
     //   RevealHolder,
@@ -227,6 +229,48 @@ function animatePages() {
       .setTween(Ptl)
 
       .addTo(controller);
+  });
+}
+
+const $bigBall = document.querySelector(".cursor__ball--big");
+const $smallBall = document.querySelector(".cursor__ball--small");
+const $hoverables = document.querySelectorAll(".hoverable");
+
+// Listeners
+document.body.addEventListener("mousemove", onMouseMove);
+for (let i = 0; i < $hoverables.length; i++) {
+  $hoverables[i].addEventListener("mouseenter", onMouseHover);
+  $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
+}
+
+// Move the cursor
+function onMouseMove(e) {
+  TweenMax.to($bigBall, 0.4, {
+    x: e.clientX - 15,
+    y: e.clientY - 15,
+  });
+  TweenMax.to($smallBall, 0.1, {
+    x: e.clientX - 5,
+    y: e.clientY - 7,
+  });
+}
+
+// Hover an element
+function onMouseHover() {
+  TweenMax.to($bigBall, 0.3, {
+    scale: 4,
+    // width: "200px",
+    // height: "150px",
+    // cx: "40px",
+    // r: "40px",
+    // width: 30,
+    // force3D: false,
+    // attr: { width: 100, height: 100 },
+  });
+}
+function onMouseHoverOut() {
+  TweenMax.to($bigBall, 0.3, {
+    scale: 1,
   });
 }
 
