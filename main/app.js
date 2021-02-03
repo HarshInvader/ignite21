@@ -407,6 +407,69 @@ ScrollTrigger.create({
 // make the right edge "stick" to the scroll bar. force3D: true improves performance
 gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
 
+barba.init({
+  views: [
+    {
+      namespace: "home",
+      beforeEnter() {
+        animatePages();
+        animateThings();
+      },
+    },
+    {
+      namespace: "ideathon",
+      beforeEnter() {
+        animatePages();
+      },
+    },
+  ],
+  transitions: [
+    {
+      name: "opacity-transition",
+      leave({ current, next }) {
+        let done = this.async();
+        const t1 = gsap.timeline({ defaults: { ease: "power3.inOut" } });
+        t1.fromTo(
+          current.container,
+          1,
+          { opacity: 1 },
+          { opacity: 0, onComplete: done }
+        );
+        t1.fromTo(
+          ".swipe",
+          0.6,
+          { x: "-100%" },
+          { x: "0%", onComplete: done },
+          "-=0.5"
+        );
+        // window.scrollTo(0, 0);
+        // return gsap.to(current.container, {
+        //   // x: -200,
+        //   opacity: 0,
+        // });
+      },
+      enter({ current, next }) {
+        let done = this.async();
+        const t1 = gsap.timeline({ defaults: { ease: "power3.inOut" } });
+        t1.fromTo(
+          ".swipe",
+          0.6,
+          { x: "0%" },
+          { x: "100%", stagger: 0.2, onComplete: done }
+          // "-=0.5"
+        );
+        t1.fromTo(next.container, 0.2, { opacity: 0 }, { opacity: 1 });
+
+        // return gsap.from(next.container, {
+        //   //   scale: 0,
+        //   // x: 200,
+        //   opacity: 0,
+        // });
+      },
+    },
+  ],
+});
+
 // $("#ex1").modal({
 //   fadeDuration: 1000,
 //   // fadeDelay: 0.5,

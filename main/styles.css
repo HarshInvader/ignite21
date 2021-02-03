@@ -8,6 +8,7 @@
 
 body {
   background: #194bcc;
+  position: relative;
 }
 
 h1,
@@ -81,6 +82,7 @@ h3 {
   margin-bottom: 0 !important;
   min-height: 100vh;
   height: 100vh;
+  position: relative;
 }
 
 .page2 {
@@ -326,7 +328,6 @@ h3 {
   background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
   height: 100vh;
   overflow: hidden;
-  margin-top: 50px;
   padding-left: 60px;
 }
 
@@ -347,7 +348,8 @@ h3 {
     margin: 10px 0 0 0;
     font-size: 1em;
   }
-  .page1 {
+  .page1,
+  .page2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -363,7 +365,7 @@ h3 {
     text-align: center;
     min-height: 100vh;
     margin-bottom: 0;
-    padding: 80px 10px 0 10px;
+    padding: 100px 10px 100px 10px;
     height: 100%;
   }
   .lookman {
@@ -528,5 +530,31 @@ body .cursor__ball {
 body .cursor__ball circle {
   fill: #f7f8fa;
   position: fixed !important;
+}
+
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.swipe1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cb4580), to(#cb1e52));
+  background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
+  z-index: 17;
+}
+
+.swipe2 {
+  background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
+  z-index: 16;
+}
+
+.swipe3 {
+  background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
+  z-index: 15;
 }
 /*# sourceMappingURL=styles.css.map */

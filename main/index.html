@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles.css">
 
 </head>
-<body>
+<body data-barba="wrapper">
     <!-- <div class="cursor"></div> -->
      <div class="cursor">
         <div class="cursor__ball cursor__ball--big ">
@@ -44,7 +44,7 @@
       </div>
 
     <div class="navbar ">
-        <div class="item">EVENTS</div>
+        <a class="item">EVENTS</a>
         <div class="item">ABOUT</div>
         <!-- <div class="item">TEAM</div> -->
         <div class="item">SPONSORS</div>
@@ -63,6 +63,7 @@
     </g>
   </svg>
     </div>
+    <main data-barba="container" data-barba-namespace="home">
     <div class="page skewElem page1">
         <a class="logo" href="https://ignite21.vercel.app/main/">
         <svg  class="hoverable" width="141" height="176" viewBox="0 0 141 176" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +130,7 @@
         <div class="pair">
 
     
-        <div class="ideathon flex center eventStart">
+        <div class="ideathon flex center eventStart" id="ideathon">
             <div class="eventName  illustration ">
                 <img src="./hackathon.svg" alt=""  width="80px"> &nbsp;
                 <svg width="365" height="69" viewBox="0 0 365 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +145,7 @@
                   
                   </button>
                   
-                  <a href="#ex1" rel="modal:open" class="button red hollowButton hoverable"> More Details &nbsp;<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <a href="./ideathon.html" class="button red hollowButton hoverable"> More Details &nbsp;<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M19.9997 3.33317C29.1913 3.33317 36.6663 10.8098 36.6663 19.9998C36.6663 29.1898 29.1913 36.6665 19.9997 36.6665C10.8097 36.6665 3.33301 29.1898 3.33301 19.9998C3.33301 10.8098 10.8097 3.33317 19.9997 3.33317Z" fill="white"/>
                     <path d="M17.5956 12.9659C17.914 12.9659 18.234 13.0875 18.4773 13.3309L24.289 19.1142C24.524 19.3492 24.6556 19.6675 24.6556 20.0009C24.6556 20.3325 24.524 20.6509 24.289 20.8859L18.4773 26.6725C17.989 27.1592 17.199 27.1592 16.7106 26.6692C16.224 26.1792 16.2256 25.3875 16.714 24.9009L21.6356 20.0009L16.714 15.1009C16.2256 14.6142 16.224 13.8242 16.7106 13.3342C16.954 13.0875 17.2756 12.9659 17.5956 12.9659Z" fill="white"/>
                     </svg>
@@ -160,7 +161,7 @@
       <div class="pair">
 
    
-        <div class="gaming flex center eventStart">
+        <div class="gaming flex center eventStart" id="gaming">
           <div class="eventName center illustration">
             <img src="./assets/game.svg" alt=""  width="80px"> &nbsp;
             <svg width="271" height="74" viewBox="0 0 271 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +176,7 @@
                 
                 </button>
                 
-                <a href="#ex1" rel="modal:open" class="button red hollowButton hoverable"> More Details &nbsp;<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="gaming.html" rel="modal:open" class="button red hollowButton hoverable"> More Details &nbsp;<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.4" d="M19.9997 3.33317C29.1913 3.33317 36.6663 10.8098 36.6663 19.9998C36.6663 29.1898 29.1913 36.6665 19.9997 36.6665C10.8097 36.6665 3.33301 29.1898 3.33301 19.9998C3.33301 10.8098 10.8097 3.33317 19.9997 3.33317Z" fill="white"/>
                   <path d="M17.5956 12.9659C17.914 12.9659 18.234 13.0875 18.4773 13.3309L24.289 19.1142C24.524 19.3492 24.6556 19.6675 24.6556 20.0009C24.6556 20.3325 24.524 20.6509 24.289 20.8859L18.4773 26.6725C17.989 27.1592 17.199 27.1592 16.7106 26.6692C16.224 26.1792 16.2256 25.3875 16.714 24.9009L21.6356 20.0009L16.714 15.1009C16.2256 14.6142 16.224 13.8242 16.7106 13.3342C16.954 13.0875 17.2756 12.9659 17.5956 12.9659Z" fill="white"/>
                   </svg>
@@ -193,7 +194,7 @@
         </div>
       </div>
       <div class="pair">
-        <div class="techTalks flex center">
+        <div class="techTalks flex center" id="techTalks">
           <div class="eventName center illustration">
             <img src="./assets/mike.svg" alt=""  width="80px"> &nbsp;
             <svg width="412" height="65" viewBox="0 0 412 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,7 +209,7 @@
                 
                 </button>
                 
-                <a href="#ex1" rel="modal:open" class="button red hollowButton hoverable"> More Details &nbsp;<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="techtalks.html" rel="modal:open" class="button red hollowButton hoverable"> More Details &nbsp;<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.4" d="M19.9997 3.33317C29.1913 3.33317 36.6663 10.8098 36.6663 19.9998C36.6663 29.1898 29.1913 36.6665 19.9997 36.6665C10.8097 36.6665 3.33301 29.1898 3.33301 19.9998C3.33301 10.8098 10.8097 3.33317 19.9997 3.33317Z" fill="white"/>
                   <path d="M17.5956 12.9659C17.914 12.9659 18.234 13.0875 18.4773 13.3309L24.289 19.1142C24.524 19.3492 24.6556 19.6675 24.6556 20.0009C24.6556 20.3325 24.524 20.6509 24.289 20.8859L18.4773 26.6725C17.989 27.1592 17.199 27.1592 16.7106 26.6692C16.224 26.1792 16.2256 25.3875 16.714 24.9009L21.6356 20.0009L16.714 15.1009C16.2256 14.6142 16.224 13.8242 16.7106 13.3342C16.954 13.0875 17.2756 12.9659 17.5956 12.9659Z" fill="white"/>
                   </svg>
@@ -245,7 +246,7 @@
       <img class="humans" src="./assets/humans2x.png" width="200px" alt="">
     </div>
 
-    <div id="ex1" class="modal">
+    <!-- <div id="ex1" class="modal">
       <div class="ideathon flex center row ">
             <div class="eventName  illustration ">
                 <img src="./hackathon.svg" alt=""  width="80px"> &nbsp;
@@ -293,8 +294,12 @@
         <path opacity="0.4" d="M77.3437 9.4165H36.5224C20.5612 9.4165 9.82617 20.6223 9.82617 37.2898V75.7569C9.82617 92.3773 20.5612 103.583 36.5224 103.583H77.3437C93.3049 103.583 103.993 92.3773 103.993 75.7569V37.2898C103.993 20.6223 93.3049 9.4165 77.3437 9.4165Z" fill="white"/>
         <path d="M71.1103 64.8359L62.7342 56.4644L71.1056 48.093C72.7159 46.4875 72.7159 43.8744 71.1056 42.2688C69.4954 40.6492 66.8917 40.6539 65.2814 42.2641L56.9053 50.6355L48.5292 42.2547C46.9189 40.6444 44.3105 40.6539 42.7003 42.2547C41.0947 43.8649 41.0947 46.4781 42.7003 48.0836L51.0811 56.4644L42.7191 64.8217C41.1088 66.432 41.1088 69.0451 42.7191 70.6459C43.5242 71.4558 44.5742 71.856 45.6288 71.856C46.6882 71.856 47.7382 71.4558 48.5433 70.6507L56.9053 62.2887L65.2861 70.6648C66.0913 71.4699 67.1412 71.8701 68.1959 71.8701C69.2505 71.8701 70.3052 71.4652 71.1103 70.6648C72.7206 69.0545 72.7206 66.4461 71.1103 64.8359Z" fill="white"/>
         </svg></a>
-    </div>
-    
+    </div> -->
+  </main>
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+
       
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
@@ -323,9 +328,12 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
 
   <script src="./app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <!-- <script src="./pageTransition.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script> -->
 
     
 </body>
