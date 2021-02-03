@@ -82,6 +82,7 @@ h3 {
   min-height: 100vh;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 
   // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   // background-size: 400% 400%;
@@ -94,6 +95,7 @@ h3 {
   background: #554cc2;
   padding: 120px 0 0px 0 !important;
   position: relative;
+  overflow: hidden;
 }
 .gaming {
   background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);

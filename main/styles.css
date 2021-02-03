@@ -83,6 +83,7 @@ h3 {
   min-height: 100vh;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .page2 {
@@ -90,6 +91,7 @@ h3 {
   background: #554cc2;
   padding: 120px 0 0px 0 !important;
   position: relative;
+  overflow: hidden;
 }
 
 .gaming {
