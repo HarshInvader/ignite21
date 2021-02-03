@@ -10,6 +10,10 @@
   display: none;
 }
 
+.pd-30 button {
+  margin: 20px 16px;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +215,8 @@
   margin: 12px 20px;
 }
 
-.button {
+.button,
+.buttonBell {
   padding: 15px 28px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -229,6 +234,13 @@
           justify-content: center;
   margin: 50px 0 0 0;
   cursor: none !important;
+  border: 2px solid transparent;
+}
+
+.buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button svg {
@@ -251,9 +263,32 @@
   cursor: none !important;
 }
 
+.buttonBell svg {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175), -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
+
+.buttonBell:hover svg {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175), -webkit-transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
+
 .red {
-  border: none;
+  border: 2px solid transparent;
   background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.hollowButton {
+  border: 1px solid #fff;
+  background: transparent;
   color: #ffffff;
   opacity: 0.8;
 }

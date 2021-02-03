@@ -17,6 +17,9 @@ body {
 .mobileNavbar {
   display: none;
 }
+.pd-30 button {
+  margin: 20px 16px;
+}
 .flex {
   display: flex;
 }
@@ -197,7 +200,8 @@ body {
   margin: 12px 20px;
   // mix-blend-mode: hard-light;
 }
-.button {
+.button,
+.buttonBell {
   padding: 15px 28px;
   // height: 70px;
   box-sizing: border-box;
@@ -211,6 +215,12 @@ body {
   justify-content: center;
   margin: 50px 0 0 0;
   cursor: none !important;
+  border: 2px solid transparent;
+}
+
+.buttons {
+  // justify-content: space-between;
+  align-items: center;
 }
 
 .button svg {
@@ -224,11 +234,26 @@ body {
   // transform: translate(0, -4px);
   cursor: none !important;
 }
+
+.buttonBell svg {
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
+.buttonBell:hover svg {
+  transform: rotate(20deg);
+  transition: transform 0.3s cubic-bezier(2.175, 0.885, 0.32, 0.175);
+}
 .red {
   // background: #c83200;
-  // border: 2px solid #c83200;
-  border: none;
+  border: 2px solid transparent;
+  // border: none;
   background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+
+  opacity: 0.8;
+}
+.hollowButton {
+  border: 1px solid #fff;
+  background: transparent;
   color: #ffffff;
 
   opacity: 0.8;
