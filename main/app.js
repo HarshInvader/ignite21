@@ -301,7 +301,7 @@ function animateThings() {
     // );
     var scene = new ScrollMagic.Scene({
       triggerElement: pairHook,
-      triggerHook: 1,
+      triggerHook: 0.7,
       duration: "100%",
       // pin: true,
 
