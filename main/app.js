@@ -6,7 +6,6 @@ function animatePages() {
   //Select some things
   const sectioners = document.querySelectorAll(".page");
   const nav = document.querySelector(".nav");
-  const pairers = document.querySelectorAll(".pair");
   sectioners.forEach((section, index, sections) => {
     const RevealTagline1 = section.querySelector(".notUnderline");
     const RevealTagline2 = section.querySelector(".underline");
@@ -16,7 +15,6 @@ function animatePages() {
     const RevealImg = section.querySelector(".welcomeIcon");
     const RevealCard = section.querySelector(".featureCard");
     const RevealMessage = section.querySelector(".message1");
-    const pairHook = section.querySelector(".pair");
 
     //Timeline
     const slide = gsap.timeline({
@@ -186,23 +184,36 @@ function animatePages() {
   });
 
   //Parallax
+}
+function animateThings() {
+  // const pairHook = document.querySelector(".pair");
+  const pairers = document.querySelectorAll(".pair");
+
   pairers.forEach((pairHook, index, pairs) => {
     const Ptl = new TimelineMax();
-    let child = pairHook.querySelectorAll(".parallax");
-    let childRight = pairHook.querySelectorAll(".parallaxRight");
-    const ideathon = pairHook.querySelector(".ideathon");
-    const illustrationReveal = pairHook.querySelector(".illustration");
-    const illustrationRevealRight = pairHook.querySelector(
-      ".illustrationRight"
-    );
-
+    console.log("pairhook", pairHook);
+    const child = pairHook.querySelectorAll(".parallax");
+    // let childRight = pairHook.querySelectorAll(".parallaxRight");
+    // const ideathon = pairHook.querySelector(".ideathon");
+    const illustrationReveal = pairHook.querySelectorAll(".illustration");
+    // const illustrationRevealRight = pairHook.querySelector(
+    //   ".illustrationRight"
+    // );
+    // const Ptl = gsap.timeline({
+    //   defaults: {
+    //     duration: 20,
+    //     ease: "power3.inOut",
+    //   },
+    //   scrollTrigger: {
+    //     pin: true,
+    //   },
+    // });
     Ptl.fromTo(
       illustrationReveal,
-      1,
       {
         // scale: 0,
         // x: -400,
-        y: 40,
+        y: 500,
         opacity: 0,
       },
       {
@@ -216,55 +227,54 @@ function animatePages() {
 
     Ptl.fromTo(
       child,
-      1,
       {
         // scale: 0,
         // x: 400,
-        y: 40,
+        y: 300,
         opacity: 0,
       },
       {
         scale: 1,
         x: 0,
-        y: 0,
+        y: -80,
         opacity: 1,
       }
       // "power3.inOut"
     );
-    Ptl.fromTo(
-      illustrationRevealRight,
-      1,
-      {
-        // scale: 0,
-        // x: -200,
-        y: 40,
-        opacity: 0,
-      },
-      {
-        scale: 1,
-        y: 0,
-        x: 0,
-        opacity: 1,
-      }
-    );
+    // Ptl.fromTo(
+    //   illustrationRevealRight,
 
-    Ptl.fromTo(
-      childRight,
-      1,
-      {
-        // scale: 0,
-        y: 40,
-        x: 200,
-        opacity: 0,
-      },
-      {
-        scale: 1,
-        y: 0,
-        x: 0,
-        opacity: 1,
-      }
-      // "power3.inOut"
-    );
+    //   {
+    //     // scale: 0,
+    //     // x: -200,
+    //     y: 40,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     scale: 1,
+    //     y: 0,
+    //     x: 0,
+    //     opacity: 1,
+    //   }
+    // );
+
+    // Ptl.fromTo(
+    //   childRight,
+
+    //   {
+    //     // scale: 0,
+    //     y: 40,
+    //     x: 200,
+    //     opacity: 0,
+    //   },
+    //   {
+    //     scale: 1,
+    //     y: 0,
+    //     x: 0,
+    //     opacity: 1,
+    //   }
+    //   // "power3.inOut"
+    // );
     // Ptl.fromTo(
     //   ideathon,
     //   1,
@@ -291,11 +301,14 @@ function animatePages() {
     // );
     var scene = new ScrollMagic.Scene({
       triggerElement: pairHook,
-      triggerHook: 0.5,
+      triggerHook: 1,
       duration: "100%",
+      // pin: true,
+
+      // end: "+=4000",
     })
       .setTween(Ptl)
-
+      .addIndicators()
       .addTo(controller);
   });
 }
@@ -368,6 +381,7 @@ function onMouseRotateOut() {
   });
 }
 animatePages();
+animateThings();
 
 let proxy = { skew: 0 },
   skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
@@ -398,14 +412,14 @@ gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
 //   // fadeDelay: 0.5,
 // });
 
-$("#manual-ajax").click(function (event) {
-  event.preventDefault();
-  this.blur(); // Manually remove focus from clicked link.
-  $.get(this.href, function (html) {
-    $(html).appendTo("body").modal();
-  });
-});
+// $("#manual-ajax").click(function (event) {
+//   event.preventDefault();
+//   this.blur(); // Manually remove focus from clicked link.
+//   $.get(this.href, function (html) {
+//     $(html).appendTo("body").modal();
+//   });
+// });
 
-$("#fade").modal({
-  fadeDuration: 100,
-});
+// $("#fade").modal({
+//   fadeDuration: 100,
+// });

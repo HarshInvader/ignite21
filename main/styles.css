@@ -54,6 +54,7 @@
   background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
   margin-bottom: 0 !important;
   min-height: 100vh;
+  height: 100vh;
 }
 
 .page2 {
@@ -66,13 +67,13 @@
 .gaming {
   background: -webkit-gradient(linear, left top, left bottom, from(#cb4580), to(#cb1e52));
   background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
-  height: 600px;
+  height: 100vh;
   overflow: hidden;
 }
 
 .techTalks {
   background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
-  height: 600px;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -297,7 +298,7 @@
 
 .ideathon {
   background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
-  height: 600px;
+  height: 100vh;
   overflow: hidden;
   margin-top: 50px;
   padding-left: 60px;
