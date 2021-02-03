@@ -308,7 +308,7 @@ function animateThings() {
       // end: "+=4000",
     })
       .setTween(Ptl)
-      .addIndicators()
+      // .addIndicators()
       .addTo(controller);
   });
 }
