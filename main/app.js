@@ -201,12 +201,14 @@ function animatePages() {
       1,
       {
         // scale: 0,
-        x: -400,
+        // x: -400,
+        y: 40,
         opacity: 0,
       },
       {
         scale: 1,
         x: 0,
+        y: 0,
         opacity: 1,
       }
       // "power3.inOut"
@@ -217,12 +219,14 @@ function animatePages() {
       1,
       {
         // scale: 0,
-        x: 400,
+        // x: 400,
+        y: 40,
         opacity: 0,
       },
       {
         scale: 1,
         x: 0,
+        y: 0,
         opacity: 1,
       }
       // "power3.inOut"
@@ -232,15 +236,16 @@ function animatePages() {
       1,
       {
         // scale: 0,
-        x: -200,
+        // x: -200,
+        y: 40,
         opacity: 0,
       },
       {
         scale: 1,
+        y: 0,
         x: 0,
         opacity: 1,
       }
-      // "power3.inOut"
     );
 
     Ptl.fromTo(
@@ -248,11 +253,13 @@ function animatePages() {
       1,
       {
         // scale: 0,
+        y: 40,
         x: 200,
         opacity: 0,
       },
       {
         scale: 1,
+        y: 0,
         x: 0,
         opacity: 1,
       }
@@ -284,7 +291,7 @@ function animatePages() {
     // );
     var scene = new ScrollMagic.Scene({
       triggerElement: pairHook,
-      triggerHook: 0.8,
+      triggerHook: 0.5,
       duration: "100%",
     })
       .setTween(Ptl)
@@ -296,18 +303,23 @@ function animatePages() {
 const $bigBall = document.querySelector(".cursor__ball--big");
 const $smallBall = document.querySelector(".cursor__ball--small");
 const $hoverables = document.querySelectorAll(".hoverable");
-
+const $rotators = document.querySelectorAll(".rotator");
+// var follower = this.querySelector(".follower");
 // Listeners
 document.body.addEventListener("mousemove", onMouseMove);
 for (let i = 0; i < $hoverables.length; i++) {
   $hoverables[i].addEventListener("mouseenter", onMouseHover);
   $hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
 }
+for (let i = 0; i < $rotators.length; i++) {
+  $rotators[i].addEventListener("mouseenter", onMouseRotate);
+  $rotators[i].addEventListener("mouseleave", onMouseRotateOut);
+}
 
 // Move the cursor
 function onMouseMove(e) {
   TweenMax.to($bigBall, 0.4, {
-    x: e.clientX - 10,
+    x: e.clientX - 14,
     y: e.clientY - 14,
   });
   TweenMax.to($smallBall, 0.1, {
@@ -315,11 +327,16 @@ function onMouseMove(e) {
     y: e.clientY - 7,
   });
 }
-
+// TweenMax.to(follower, 0.3, {
+//   x: e.clientX - 10,
+//   y: e.clientY - 14,
+//   ease: Power4.easeOut,
+// });
 // Hover an element
 function onMouseHover() {
   TweenMax.to($bigBall, 0.3, {
     scale: 2,
+    // rotation: 18,
     // width: "200px",
     // height: "150px",
     // cx: "40px",
@@ -331,10 +348,25 @@ function onMouseHover() {
 }
 function onMouseHoverOut() {
   TweenMax.to($bigBall, 0.3, {
+    // rotation: 10,
     scale: 1,
   });
 }
 
+// Hover an element
+function onMouseRotate() {
+  TweenMax.to($bigBall, 0.3, {
+    scale: 2,
+    rotation: 720,
+  });
+}
+function onMouseRotateOut() {
+  TweenMax.to($bigBall, 0.3, {
+    rotation: 0,
+    scale: 1,
+    // repeat: 0,
+  });
+}
 animatePages();
 
 let proxy = { skew: 0 },
@@ -360,3 +392,20 @@ ScrollTrigger.create({
 
 // make the right edge "stick" to the scroll bar. force3D: true improves performance
 gsap.set(".skewElem", { transformOrigin: "right center", force3D: true });
+
+// $("#ex1").modal({
+//   fadeDuration: 1000,
+//   // fadeDelay: 0.5,
+// });
+
+$("#manual-ajax").click(function (event) {
+  event.preventDefault();
+  this.blur(); // Manually remove focus from clicked link.
+  $.get(this.href, function (html) {
+    $(html).appendTo("body").modal();
+  });
+});
+
+$("#fade").modal({
+  fadeDuration: 100,
+});
