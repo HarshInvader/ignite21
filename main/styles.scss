@@ -327,6 +327,7 @@ a {
   border-radius: 15px;
   padding: 40px 70px;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .card .col {
   margin: auto 30px;
@@ -369,14 +370,39 @@ a {
 
   right: 80px;
 }
+.eventNameContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+.underlineEvent {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+.sticker {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.relative {
+  position: relative;
+}
 @media screen and (max-width: 980px) {
+  .underlineEvent {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
   .growMobile {
     flex-grow: 1;
   }
   .closeModal {
     position: absolute;
     top: 20px;
-
+    right: unset;
     left: 40px;
   }
   .card {
@@ -416,6 +442,8 @@ a {
   }
   .subText {
     width: 80%;
+    margin: auto !important;
+    text-align: center;
   }
   .tagline {
     text-align: center !important;
@@ -500,6 +528,7 @@ a {
     flex-direction: column;
     padding-top: 80px;
     padding-left: 0;
+    text-align: center;
   }
   .hackathonLogo {
     width: 40px;
