@@ -81,7 +81,6 @@ h3 {
   background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
   margin-bottom: 0 !important;
   min-height: 100vh;
-  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -96,13 +95,13 @@ h3 {
 .gaming {
   background: -webkit-gradient(linear, left top, left bottom, from(#cb4580), to(#cb1e52));
   background: linear-gradient(180deg, #cb4580 0%, #cb1e52 100%);
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .techTalks {
   background: linear-gradient(148deg, #00938a 9.18%, #00a098 90.83%);
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -327,7 +326,7 @@ h3 {
 
 .ideathon {
   background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   padding-left: 60px;
 }
@@ -428,12 +427,6 @@ h3 {
     width: auto !important;
     cursor: default !important;
   }
-}
-
-#ex1 {
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(139.41deg, #ebbe21 5.11%, #d67300 91.8%);
 }
 
 .modal {
