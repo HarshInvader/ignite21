@@ -264,7 +264,7 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 50px 0 0 0;
-  cursor: none !important;
+  cursor: none;
   border: 2px solid transparent;
 }
 
@@ -336,6 +336,25 @@ h3 {
 }
 
 @media screen and (max-width: 980px) {
+  .button,
+  .buttonBell {
+    cursor: pointer !important;
+  }
+  .button:hover {
+    cursor: pointer !important;
+  }
+  .remindmeArrow {
+    width: 27px;
+  }
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .eventNameTitle {
+    width: 80vw;
+  }
   .subText {
     width: 80%;
   }
@@ -411,6 +430,7 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 80px;
+    padding-left: 0;
   }
   .hackathonLogo {
     width: 40px;
