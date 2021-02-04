@@ -335,7 +335,81 @@ h3 {
   width: 80px;
 }
 
+.divCenter {
+  display: block;
+  margin: auto;
+  text-align: center;
+  left: 50%;
+}
+
+.card {
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .col {
+  margin: auto 30px;
+}
+
+.eventDetailPage {
+  padding-top: 90px;
+}
+
+.cardHead {
+  font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 87%;
+  letter-spacing: 0.025em;
+  /* or 17px */
+  color: #dc8a0a;
+}
+
+.cardText {
+  margin: 10px 0 8px 0;
+  font-family: "Circular Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 87%;
+  /* or 26px */
+  letter-spacing: -0.015em;
+  color: #861414;
+}
+
+.closeModal {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+}
+
 @media screen and (max-width: 980px) {
+  .closeModal {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+  }
+  .card {
+    width: 90vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 40px;
+  }
+  .eventDetailPage {
+    padding-top: 160px !important;
+  }
+  .cardHead,
+  .cardText {
+    margin: 20px 0;
+  }
   .button,
   .buttonBell {
     cursor: pointer !important;
@@ -461,12 +535,6 @@ h3 {
   padding: 0;
   -webkit-animation: all 2s ease-in-out;
           animation: all 2s ease-in-out;
-}
-
-.closeModal {
-  position: absolute;
-  top: 80px;
-  right: 80px;
 }
 
 @-webkit-keyframes Gradient {
