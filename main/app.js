@@ -236,7 +236,7 @@ function animateThings() {
       {
         scale: 1,
         x: 0,
-        y: -90,
+        y: -40,
         opacity: 1,
       }
       // "power3.inOut"
@@ -450,13 +450,14 @@ barba.init({
           { x: "0%", onComplete: done },
           "-=0.5"
         );
-        window.scrollTo(0, 0);
         // return gsap.to(current.container, {
         //   // x: -200,
         //   opacity: 0,
         // });
       },
       enter({ current, next }) {
+        // window.scrollTo(0, 0);
+
         let done = this.async();
         const t1 = gsap.timeline({ defaults: { ease: "power3.inOut" } });
         t1.fromTo(
