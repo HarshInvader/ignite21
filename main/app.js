@@ -427,6 +427,9 @@ barba.init({
         animatePages();
       },
     },
+    {
+      namespace: "typeform",
+    },
   ],
   transitions: [
     {
