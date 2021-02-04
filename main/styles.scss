@@ -343,7 +343,7 @@ a {
   font-family: "Integral CF", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 20px;
   line-height: 87%;
   letter-spacing: 0.025em;
@@ -361,6 +361,12 @@ a {
 }
 .gameCardText {
   color: #001e6b;
+}
+.techtalksCardHead {
+  color: #00938a;
+}
+.techtalksText {
+  color: #3f3820;
 }
 // opacity: 0.9;
 
@@ -593,6 +599,14 @@ a {
   src: url("fonts/IntegralCF-ExtraBold.woff2") format("woff2"),
     url("fonts/IntegralCF-ExtraBold.woff") format("woff");
   font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("IntegralCF-Medium.woff2") format("woff2"),
+    url("IntegralCF-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
