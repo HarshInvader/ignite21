@@ -450,7 +450,7 @@ barba.init({
           { x: "0%", onComplete: done },
           "-=0.5"
         );
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
         // return gsap.to(current.container, {
         //   // x: -200,
         //   opacity: 0,
