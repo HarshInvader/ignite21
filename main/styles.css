@@ -341,6 +341,11 @@ a {
   color: #e19d12;
 }
 
+.whitebutRed {
+  background-color: white;
+  color: #bc4069;
+}
+
 .hackathonLogo {
   width: 80px;
 }
@@ -379,7 +384,22 @@ a {
   line-height: 87%;
   letter-spacing: 0.025em;
   /* or 17px */
+}
+
+.yellowCardHead {
   color: #dc8a0a;
+}
+
+.yelloCardText {
+  color: #861414;
+}
+
+.gameCardHead {
+  color: #cb2d63;
+}
+
+.gameCardText {
+  color: #001e6b;
 }
 
 .cardText {
@@ -391,7 +411,6 @@ a {
   line-height: 87%;
   /* or 26px */
   letter-spacing: -0.015em;
-  color: #861414;
 }
 
 .closeModal {
