@@ -231,12 +231,12 @@ function animateThings() {
         // scale: 0,
         // x: 400,
         y: 300,
-        opacity: 0,
+        opacity: 0.3,
       },
       {
         scale: 1,
         x: 0,
-        y: -80,
+        y: -90,
         opacity: 1,
       }
       // "power3.inOut"

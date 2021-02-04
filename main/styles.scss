@@ -380,6 +380,12 @@ h3 {
   .eventDetailPage {
     padding-top: 160px !important;
   }
+  .eventDetailPage .eventName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .cardHead,
   .cardText {
     margin: 20px 0;
@@ -425,7 +431,7 @@ h3 {
     // padding-bottom: 0;
     margin-bottom: 0;
     padding: 100px 10px 100px 10px;
-    padding: 30px 0 0 0 !important;
+    padding: 30px 5vw 0 5vw !important;
     height: 100%;
   }
   .page2 {
@@ -443,7 +449,7 @@ h3 {
   }
   .lookman {
     position: relative;
-    width: 200px;
+    width: 50vw;
     justify-self: flex-end;
     // margin-top: auto;
     // align-self: flex-end;
