@@ -213,7 +213,7 @@ function animateThings() {
       {
         // scale: 0,
         // x: -400,
-        y: 500,
+        y: 300,
         opacity: 0,
       },
       {
