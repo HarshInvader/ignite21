@@ -43,7 +43,7 @@ h3 {
   grid-template-columns: 30vw 30vw;
 
   grid-row: auto auto;
-  grid-gap: 40px 40px;
+  grid-gap: 60px 60px;
   padding: 40px 0;
 }
 .socialCard {
@@ -55,11 +55,17 @@ h3 {
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-  padding: 60px 120px;
+  justify-content: center;
+  // padding: 60px 120px;
+  width: 100%;
+  height: 300px;
   background: #555555;
   margin: auto 40px;
 }
-
+.socialCard:hover svg {
+  transform: translate(0, -10px);
+  animation: all 0.2s ease-in-out;
+}
 .twitter:hover {
   background: #2aa9e0;
 }
@@ -98,7 +104,7 @@ h3 {
 
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 60px;
-
+  margin-top: 20px;
   // left: 218px;
   // top: 5757px;
 
@@ -112,6 +118,21 @@ h3 {
     #c04d95 92.61%
   );
   border-radius: 15px;
+}
+.socialcardText {
+  text-align: center;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 100%;
+  /* identical to box height, or 25px */
+
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
 }
 a {
   cursor: none;
@@ -509,6 +530,10 @@ a {
     grid-row: auto auto;
     grid-gap: 40px 40px;
     overflow: hidden !important;
+  }
+  .socialCard {
+    margin: auto auto;
+    padding: 0 20px;
   }
   .page4 {
     overflow: hidden;
