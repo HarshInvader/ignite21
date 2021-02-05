@@ -495,3 +495,29 @@ barba.init({
 // $("#fade").modal({
 //   fadeDuration: 100,
 // });
+
+// $(".twitter").mouseenter(function () {
+//   $(".page4").css("background-color", "#2aa9e0").fadeIn("slow");
+// });
+
+// $(".twitter").mouseleave(function () {
+//   $(".page4").css("background-color", "black");
+// });
+
+// $(".youtube").mouseenter(function () {
+//   $(".page4").css("background-color", "#e62e2e");
+// });
+// $(".youtube").mouseleave(function () {
+//   $(".page4").css("background-color", " black");
+// });
+
+// $(".instagram").mouseenter(function () {
+//   $(".page4").css("background", "#C837AB");
+// });
+// $(".instagram").mouseleave(function () {
+//   $(".page4").css("background", "black");
+// });
+
+// $(".youtube").mouseleave(function () {
+//   $(".page4").css("background-color", " black");
+// });
