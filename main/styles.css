@@ -31,20 +31,12 @@ h3 {
 .socialCards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30vw 30vw;
-      grid-template-columns: 30vw 30vw;
+  -ms-grid-columns: 20vw 20vw 20vw 20vw;
+      grid-template-columns: 20vw 20vw 20vw 20vw;
   grid-row: auto auto;
-  grid-gap: 60px 60px;
-  padding: 40px 0;
 }
 
 .socialCard {
-  margin: 20px 0;
-}
-
-.socialCard {
-  -webkit-box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-          box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,35 +54,38 @@ h3 {
   width: 100%;
   height: 250px;
   background: #555555;
-  -webkit-animation: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          animation: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+  padding: 0 10px;
+  position: relative;
 }
 
 .socialCard svg {
-  -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  width: 80px;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+  width: 50px;
+}
+
+.newPageIcon {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.socialCard:hover .newPageIcon {
+  display: block;
 }
 
 .socialCard:hover svg {
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);
-  -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.twitter:hover {
-  -webkit-box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-          box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-  background: #2aa9e0;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
 @-webkit-keyframes cementToColor {
   0% {
-    -webkit-box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-            box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
   }
   50% {
     -webkit-box-shadow: inset 10px 10px 60px #484848, inset -10px -10px 60px #626262;
@@ -104,8 +99,6 @@ h3 {
 
 @keyframes cementToColor {
   0% {
-    -webkit-box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-            box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
   }
   50% {
     -webkit-box-shadow: inset 10px 10px 60px #484848, inset -10px -10px 60px #626262;
@@ -117,27 +110,25 @@ h3 {
   }
 }
 
+.twitter:hover {
+  background: #2aa9e0;
+}
+
 .youtube:hover {
-  -webkit-box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-          box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
   background: #ff0000;
 }
 
 .facebook:hover {
-  -webkit-box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-          box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
   background: #1977f3;
 }
 
 .instagram:hover {
-  -webkit-box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
-          box-shadow: inset 20px 20px 60px #484848, inset -20px -20px 60px #626262;
   background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%);
 }
 
 .emailCard {
   width: 60vw;
-  height: 399px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,23 +150,37 @@ h3 {
   letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 60px;
-  margin-top: 20px;
+  margin-top: 0px;
   /* yerow */
-  background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
   border-radius: 15px;
   position: relative;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.emailCard:hover {
+  background: linear-gradient(144.69deg, #f6bf4a 1.56%, #ec622d 35.7%, #dc395e 64.16%, #c04d95 92.61%);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
 .hand {
   position: absolute;
+  border-radius: 15px;
   bottom: 0;
   right: 0;
   width: 30%;
   opacity: 0;
   -webkit-transform: translate(0px, 0);
           transform: translate(0px, 0);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
 .emailCard:hover .hand {
@@ -183,8 +188,10 @@ h3 {
   opacity: 1;
   -webkit-transform: translate(0px, 0);
           transform: translate(0px, 0);
-  -webkit-transition-duration: 0.5s ease-in-out;
-          transition-duration: 0.5s ease-in-out;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
 .socialcardText {
@@ -192,13 +199,55 @@ h3 {
   font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 100%;
   /* identical to box height, or 25px */
+  opacity: 0;
+  display: none;
   text-align: center;
-  letter-spacing: -0.015em;
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.socialcardTextBefore {
+  text-align: center;
+  font-family: Circular Std, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
+  /* identical to box height, or 25px */
+  opacity: 0;
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.socialCard:hover .socialcardText {
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
+}
+
+.socialCard:hover .socialcardTextBefore {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: opacity 175ms ease, -webkit-transform 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease;
+  transition: transform 175ms ease, opacity 175ms ease, -webkit-transform 175ms ease;
 }
 
 a {
@@ -638,13 +687,30 @@ a {
 }
 
 @media screen and (max-width: 980px) {
+  .socialcardText {
+    display: block;
+    opacity: 1;
+  }
+  .twitter {
+    background: #2aa9e0;
+  }
+  .youtube {
+    background: #ff0000;
+  }
+  .facebook {
+    background: #1977f3;
+  }
+  .instagram {
+    background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%);
+  }
   .socialCards {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    grid-row: auto auto;
-    grid-gap: 40px 40px;
+    grid-row: auto;
+    grid-gap: 20px 20px;
+    margin-bottom: 30px;
   }
   a {
     cursor: pointer;
