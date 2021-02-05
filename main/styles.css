@@ -204,7 +204,6 @@ h3 {
   line-height: 100%;
   /* identical to box height, or 25px */
   opacity: 0;
-  display: none;
   text-align: center;
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.9);
